@@ -1,13 +1,13 @@
 package com.codepath.apps.restclienttemplate;
 
-import org.scribe.builder.api.Api;
-import org.scribe.builder.api.FlickrApi;
-
 import android.content.Context;
 import android.util.Log;
 
 import com.codepath.oauth.OAuthBaseClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+
+import org.scribe.builder.api.Api;
+import org.scribe.builder.api.FlickrApi;
 
 public class FlickrClient extends OAuthBaseClient {
     public static final Class<? extends Api> REST_API_CLASS = FlickrApi.class;
@@ -22,7 +22,7 @@ public class FlickrClient extends OAuthBaseClient {
     }
 
     public void getInterestingnessList(AsyncHttpResponseHandler handler) {
-        String apiUrl = getApiUrl("?&format=json&nojsoncallback=1&api_key="YOUR API KEY HERE"&method=flickr.interestingness.getList");
+        String apiUrl = getApiUrl("?&format=json&nojsoncallback=1&api_key=57ac210e2e82195e071f9a761d763ca0&method=flickr.interestingness.getList");
         Log.d("DEBUG", "Sending API call to " + apiUrl);
         client.get(apiUrl, null, handler);
     }
