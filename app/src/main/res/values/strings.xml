@@ -6,6 +6,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_photos">Flickr Photos</string>
     <string name="login_label">Log in</string>
-    
+    <string name="check_access_token_label">Access Token</string>
+    <string name="check_request_token_label">Request Token</string>
+
 
 </resources>
